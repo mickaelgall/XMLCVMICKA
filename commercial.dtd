@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8">
+<!ELEMENT commercial (client+)>
+<!ELEMENT client (demande+)>
+<!ATTLIST client nom CDATA #REQUIRED>
+<!ATTLIST client prenom CDATA #REQUIRED>
+<!ATTLIST client mail CDATA #REQUIRED>
+<!ATTLIST client mobile CDATA #IMPLIED>
+<!ELEMENT demande (destination, periode, duree, nbParticipants, tarifMax, propositions?)>
+<!ELEMENT destination (#PCDATA)>
+<!ELEMENT periode (#PCDATA)>
+<!ELEMENT duree (#PCDATA)>
+<!ELEMENT nbParticipants (#PCDATA)>
+<!ELEMENT tarifMax (#PCDATA)>
+<!ELEMENT propositions (proposition+)>
+<!ELEMENT proposition (#PCDATA)>
